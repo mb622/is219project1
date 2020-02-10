@@ -1,0 +1,16 @@
+{
+  "name": "is219",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Ian Blancaflor",
+  "email": "mb622@njit.edu",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
