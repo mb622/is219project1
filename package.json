@@ -1,12 +1,12 @@
 {
-  "name": "is219",
+  "name": "is219project1",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "start": "node index.js",
-	"coverage": "jest --coverage",
-	"coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
+    "coverage": "jest --coverage",
+    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "keywords": [],
   "author": "Ian Blancaflor",
