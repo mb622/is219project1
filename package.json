@@ -4,13 +4,15 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "node index.js"
+    "start": "node index.js",
+	"coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "keywords": [],
   "author": "Ian Blancaflor",
   "email": "mb622@njit.edu",
   "dependencies": {},
   "devDependencies": {
+    "coveralls": "^3.0.9",
     "jest": "^25.1.0"
   }
 }

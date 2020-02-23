@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js test
 
 PATH: 
-  C:\Users\ian bla\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ian bla\bin;C:\Python27;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;C:\Users\ian bla\AppData\Local\Microsoft\WindowsApps;C:\Users\ian bla\AppData\Roaming\npm;C:\Users\ian bla\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+  C:\Users\ian bla\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ian bla\bin;C:\Python27;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\ian bla\AppData\Local\Microsoft\WindowsApps;C:\Users\ian bla\AppData\Roaming\npm;C:\Users\ian bla\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
 
 Yarn version: 
   1.22.0
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: C:\Users\ian bla\Documents\IS219\package.json: Unexpected string in JSON at position 53
+  SyntaxError: C:\Users\ian bla\Documents\IS219\package.json: Unexpected string in JSON at position 130
       at JSON.parse (<anonymous>)
       at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -23,11 +23,21 @@ Trace:
 
 npm manifest: 
   {
-    "devDependencies": {
-      "jest": "^25.1.0"
-    }
+    "name": "is219",
+    "version": "1.0.0",
+    "main": "index.js",
     "scripts": {
-      "test": "jest"
+      "test": "jest",
+      "start": "node index.js"
+  	"coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls",
+    },
+    "keywords": [],
+    "author": "Ian Blancaflor",
+    "email": "mb622@njit.edu",
+    "dependencies": {},
+    "devDependencies": {
+      "coveralls": "^3.0.9",
+      "jest": "^25.1.0"
     }
   }
 
