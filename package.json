@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+	"test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "start": "node index.js",
 	"coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
