@@ -1,6 +1,7 @@
 {
   "name": "is219project1",
   "version": "1.0.0",
+  "description": "My First Node App",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -11,6 +12,7 @@
   "keywords": [],
   "author": "Ian Blancaflor",
   "email": "mb622@njit.edu",
+  "license": "ISC",
   "dependencies": {},
   "devDependencies": {
     "coveralls": "^3.0.9",
